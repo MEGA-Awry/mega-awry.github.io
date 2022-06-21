@@ -1,0 +1,12 @@
+{% assign page = site.disclosure.first %}
+<section id="{{ page.html-id }}" class="bg-bright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-heading">{{ page.title }}</h2>
+                <hr class="primary">
+                {{ page.content | markdownify }}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+{% assign page = site.media.first %}
+{% if page.posts.size >= 3 %}
+<section id="{{ page.html-id }}" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6 md-auto text-center">
+                <h2 class="section-heading">{{ page.title }}</h2>
+                <hr class="primary">
+                <ul class="text-left">
+                    {% for item in page.posts %}
+                        <li>
+                            <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

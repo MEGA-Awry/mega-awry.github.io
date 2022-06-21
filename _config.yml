@@ -1,2 +1,25 @@
-title: Coming Soon
+# Site settings
+title: "MEGA: Malleable Encryption Goes Awry"
+email: "mega.awry@gmail.com"
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 
+twitter_username:
+github_username: "MEGA-Awry/attacks-poc"
+
+collections:
+  background:
+  attacks:
+    order:
+      - rsa_key_recovery.md
+      - pt_recovery.md
+      - framing_attack.md
+      - integrity_attack.md
+      - gap_bleichenbacher.md
+  disclosure:
+  media:
+  questions:
+
+# Build settings
+markdown: kramdown

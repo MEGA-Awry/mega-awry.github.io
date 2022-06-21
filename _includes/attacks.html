@@ -1,0 +1,55 @@
+<section id="attacks" class="bg-bright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-heading">Attacks</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% assign attacks_first_half = site.attacks | slice: 0, 3 %}
+            {% for attack in attacks_first_half %}
+            <div class="col-md-4">
+                <div class="service-box text-center">
+                    <a class="page-scroll" href="#{{ attack.html-id }}">
+                        <i class="fa fa-3x {{ attack.icon }} wow bounceIn text-primary"></i>
+                        <h3>{{ attack.name }}</h3>
+                    </a>
+                    <p class="text-muted text-center">{{ attack.short-description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% assign attacks_snd_half = site.attacks | slice: 3, 2 %}
+            {% for attack in attacks_snd_half %}
+            <div class="col-md-6">
+                <div class="service-box text-center">
+                    <a class="page-scroll" href="#{{ attack.html-id }}">
+                        <i class="fa fa-3x {{ attack.icon }} wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>{{ attack.name }}</h3>
+                    </a>
+                    <p class="text-muted text-center">{{ attack.short-description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% assign attacks = site.attacks | slice: 0, 5 %}
+{% for attack in attacks %}
+{% assign r = forloop.index | modulo: 2 %}
+<section id="{{ attack.html-id }}" class="{% if r == 1 %} bg-dark {% else %} bg-bright {% endif %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="text-primary">{{ attack.name }}</h2>
+                {{ attack.content | markdownify }}
+            </div>
+        </div>
+    </div>
+</section>
+{%endfor %}
