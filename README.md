@@ -14,3 +14,4 @@ We are all from the [Applied Crypto Group](https://appliedcrypto.ethz.ch/) at ET
 ## Theme Credits
 
 This Jekyll website is based on the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+
