@@ -1,12 +1,6 @@
 ---
 ---
 
-{% assign today = site.time | date: '%s' %}
-{% assign go_live_date = '2022-06-21T23:00:00Z' | date: '%s' %}
-{% assign secs = go_live_date | minus: today %}
-{% assign hrs = secs | divided_by: 3600 %}
-{% assign mins = secs | divided_by: 60 | modulo: 60 %}
-
 <style>
 
 .middle {
@@ -26,7 +20,7 @@
 <body>
     <div class="middle">
         <p>
-            Will be published in {{ hrs }} hours {{ mins }} min.
+            Will be published on June 21, 23:00 CEST.
         </p>
     </div>
 </body>
