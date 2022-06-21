@@ -62,7 +62,6 @@ The immediate and minimal countermeasures are only temporary suggestions and are
 {: #mega-mitigation }
 
 MEGA decided to introduce additional client-side checks on the format of RSA private keys to protect against our first attack.
+They are explained in more detail in [MEGA's blog post](https://blog.mega.io/mega-security-update/){: target="_blank" }.
 While these checks directly prevent the RSA key recovery attack, and hence by extension the attacks that depend on it, this fix significantly differs from our proposed countermeasures.
 
-<!-- TODO: link to their blog post -->
-<!-- TODO: Briefly discuss issues of their mitigation -->
