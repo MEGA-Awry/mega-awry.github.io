@@ -203,7 +203,9 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background: rgba(0, 0, 0, 0.4) url('../img/header.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
     text-align: center;
     color: $theme-bright;
     .header-content {
