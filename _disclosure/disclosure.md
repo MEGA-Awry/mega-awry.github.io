@@ -49,7 +49,7 @@ These measures address our attacks more adequately at the cost of losing backwar
 {: #general-recs }
 
 - _File encryption:_ we propose a thorough redesign of MEGA's system. This includes protecting node keys with AES-GCM and using separate keys for file encryption and for protecting their attributes. Furthermore, we propose to replace MEGA's custom variant of AES-CCM for file encryption with the well-analyzed AES-GCM.
-- _Augmented PAKE for authentication:_ we recommend the usage of [OPAQUE](https://eprint.iacr.org/2018/163.pdf) to avoid targeted dictionary attacks on user passwords by MEGA.
+- _Augmented PAKE for authentication:_ we recommend the usage of [OPAQUE](https://eprint.iacr.org/2018/163.pdf) (the version where the server does not learn the password in the registration phase) instead of the authentication key. Users authenticate by proving their knowledge of the password to the server. Meanwhile a MitM adversary capable of breaking TLS cannot gain any advantage in recovering user passwords. However, a malicious server can still mount targeted dictionary attacks by simulating the authentication locally.
 {: .text-left }
 
 The proposed measures in this section require users to re-encrypt their files because the key material is derived differently, and new primitives are used.
