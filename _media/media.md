@@ -11,6 +11,7 @@ posts:
     - { 'name': 'Hacker News thread: "MEGA: Malleable Encryption Goes Awry"', 'link': 'https://news.ycombinator.com/item?id=31829130' }
     - { 'name': 'Hacker News thread: "MEGA Attack Explainer"', 'link': 'https://news.ycombinator.com/item?id=31834300' }
     - { 'name': 'Security Affairs: "Researchers found flaws in MEGA that allowed to decrypt of user data"', 'link': 'https://securityaffairs.co/wordpress/132523/hacking/mega-flaws-attacks.html' }
+    - { 'name': "Mental Outlaw YouTube video: \"MEGA's Cloud Storage Has Broken Encryption\"", 'link': 'https://www.youtube.com/watch?v=6V3HkV2sEiI&t=344s' }
     - { 'name': 'Heise.de: "Sharehoster Mega: Sicherheitsforscher entschlüsseln eigentlich geschützte Daten"', 'link': 'https://www.heise.de/news/Sharehoster-Mega-Sicherheitsforscher-entschluesseln-eingentlich-geschuetzte-Daten-7148227.html' }
 ---
 
