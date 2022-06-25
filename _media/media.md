@@ -8,7 +8,8 @@ posts:
     - { 'name': 'Bleeping Computer: MEGA fixes critical flaws that allowed the decryption of user data', 'link': 'https://www.bleepingcomputer.com/news/security/mega-fixes-critical-flaws-that-allowed-the-decryption-of-user-data/amp/' }
     - { 'name': 'Malwarebytes Labs: MEGA claims it can’t decrypt your files. But someone’s managed to...', 'link': 'https://blog.malwarebytes.com/reports/2022/06/mega-claims-it-cant-decrypt-your-files-but-someones-managed-to/amp/' }
     - { 'name': 'ETHZ News: "ETH researchers discover vulnerabilities in Mega cloud service"', 'link': 'https://ethz.ch/en/news-and-events/eth-news/news/2022/06/vulnerabilities-in-mega-cloud-service.html' }
-    - { 'name': 'Hacker News: "MEGA: Malleable Encryption Goes Awry"', 'link': 'https://news.ycombinator.com/item?id=31829130' }
+    - { 'name': 'Hacker News thread: "MEGA: Malleable Encryption Goes Awry"', 'link': 'https://news.ycombinator.com/item?id=31829130' }
+    - { 'name': 'Hacker News thread: "MEGA Attack Explainer"', 'link': 'https://news.ycombinator.com/item?id=31834300' }
     - { 'name': 'Security Affairs: "Researchers found flaws in MEGA that allowed to decrypt of user data"', 'link': 'https://securityaffairs.co/wordpress/132523/hacking/mega-flaws-attacks.html' }
     - { 'name': 'Heise.de: "Sharehoster Mega: Sicherheitsforscher entschlüsseln eigentlich geschützte Daten"', 'link': 'https://www.heise.de/news/Sharehoster-Mega-Sicherheitsforscher-entschluesseln-eingentlich-geschuetzte-Daten-7148227.html' }
 ---
