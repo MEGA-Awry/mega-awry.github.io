@@ -15,6 +15,13 @@ More specifically, the session ID that the client decrypts with the mauled priva
 This information enables a binary search for the prime factor, with one comparison per client login attempt, allowing the adversary to recover the private RSA key after 1023 client logins.
 Using lattice cryptanalysis, the number of login attempts required for the attack can be reduced to 512.
 
+**Update:**
+In July 2022, Keegan Ryan and Nadia Heninger from UC San Diego drastically improved on the key recovery attack described above.
+Their attack requires only six login attempts.
+From the abstract of their paper ["Cryptanalyzing MEGA in Six Queries"](https://eprint.iacr.org/2022/914){: target="_blank" }:
+> Our optimized attack combines several techniques, including a modification of the extended hidden number problem and the structure of RSA keys, to exploit additional information revealed by MEGA’s protocol vulnerabilities.
+MEGA has emphasized that users who had logged in more than 512 times could have been exposed; these improved attacks show that this bound was conservative, and that unpatched clients should be considered vulnerable under a much more realistic attack scenario.
+
 ### Proof of Concept Attack
 
 Since the server code is not published, we cannot implement a Proof-of-Concept (PoC) in which the adversary actually controls MEGA.

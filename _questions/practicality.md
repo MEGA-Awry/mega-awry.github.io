@@ -22,3 +22,8 @@ Such a pair can for example be obtained by MEGA from a link to a publicly shared
 
 Finally, the [GaP-Bleichenbacher attack](#gap-bleichenbacher){: .page-scroll} is of a more theoretical nature since $$ 2^{16.9} $$ interactions with the client are very expensive.
 However, attacks only improve over time, and this attack shows a fundamental flaw in the use of RSA encryption.
+
+### Update [July 2022]
+
+In ["Cryptanalyzing MEGA in Six Queries"](https://eprint.iacr.org/2022/914){: target="_blank" }, Keegan Ryan and Nadia Heninger from UC San Diego published an improved key recovery attack which reduces the number of required login attempts to six.
+This improvement not only makes recovering the RSA key easy to perform for an adversary, but also makes our [plaintext recovery](#pt-recovery){: .page-scroll}, [framing](#framing-attack){: .page-scroll}, and [integrity](#integrity-attack){: .page-scroll } attacks feasible.
